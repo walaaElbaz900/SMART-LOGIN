@@ -17,17 +17,31 @@
     <div class="warpper">
         <div class="login-box">
             <div class="login_header">
-                <span>Welcome</span>
+                <span>Login</span>
             </div>
-            <h1 class="text-center " id="x">
-
-            </h1>
             <div class="input_box">
-                <a class="input-submit login text-center pt-2" href="./index.html">Log out</a>
+                <input type="email"  id="email" class="input-field" required>
+                <label for="email" class="label">Email</label>
+                <i class="fa-solid fa-envelope icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="password"  id="pass" class="input-field" required >
+                <label for="pass" class="label">Password</label>
+                <i class="fa-solid fa-lock icon"></i>
+            </div>
+            <div class="alert alert-danger d-none" role="alert">
+                This email or password is invalid!
+              </div>
+            <div class="input_box">
+                <button class="input-submit login" >Login</button>
+            </div>
+           
+            <div class="register">
+                <span>Don't have an account? <a href="./register.html">Register</a></span>
             </div>
         </div>
       
     </div>
-   <script src="./js/home.js"></script>
+   <script src="./js/login.js"></script>
   </body>
 </html>
